@@ -9,13 +9,13 @@ def view_statistics():
     print("Molimo sačekajte, učitavamo sistem...")
     time.sleep(2)
     
-    data_for_excel =[""]
+    data_for_excel =[]
     
     url = "https://fbref.com/en/comps/8/Champions-League-Stats"
     data = requests.get(url)
 
     soup = BeautifulSoup(data.text, features="lxml")
-
+    
     standing_table = soup.select('table.stats_table')[0]  # Uzimamo tabelu sa timovima kroz klasu 'stats_table'1
 
     links = standing_table.find_all('a')
