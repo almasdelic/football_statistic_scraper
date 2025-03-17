@@ -16,7 +16,7 @@ def view_statistics():
 
     soup = BeautifulSoup(data.text, features="lxml")
 
-    standing_table = soup.select('table.stats_table')[0]  # Uzimamo tabelu sa timovima kroz klasu 'stats_table'
+    standing_table = soup.select('table.stats_table')[0]  # Uzimamo tabelu sa timovima kroz klasu 'stats_table'1
 
     links = standing_table.find_all('a')
     links = [l.get("href") for l in links]
@@ -60,7 +60,7 @@ def view_statistics():
     print(matches)
     
     # Dodavanje statistike utakmica u Excel
-    for match in matches[0].values.tolist():  # Uzima prvih 100 redova za statistiku utakmica
+    for match in matches[0].values.tolist():
         data_for_excel.append(match)
 
     # Pitaj korisnika da li želi da sačuva podatke u Excel fajl
@@ -77,7 +77,6 @@ def view_statistics():
     else:
         print("Nepoznat odgovor. Podaci nisu sačuvani.")
 
-# Pozivanje funkcije za početni unos
 view_statistics()
 
 print("*****************************")
