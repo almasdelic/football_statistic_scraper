@@ -1,4 +1,4 @@
-# 📊 **Fudbalska analiza podataka – UEFA Liga Šampiona 24/25**  
+# 📊 **Fudbalska analiza podataka – UEFA Liga Prvaka 24/25**  
 
 Ovaj projekat omogućava preuzimanje i analizu statistike utakmica timova koji učestvuju u sezoni 2024/25 UEFA Lige Prvaka. Koristeći Web scraping sa requests i BeautifulSoup bibliotekom, aplikacija omogućava korisnicima da izaberu tim i pregledaju njegove rezultate. Takođe, postoji opcija za čuvanje podataka u Excel fajl pomoću pandas biblioteke.
 
